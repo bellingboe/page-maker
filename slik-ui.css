@@ -1,0 +1,297 @@
+/*
+BASE REFERENCE
+
+box-shadow: 1px 1px 3px 0 rgba(119, 119, 119, 0.8);
+background: #356AE6;
+border-radius: 4px;
+font-family: 'Open Sans', sans-serif;
+
+ACTIVE:
+background: #284FA8;
+
+DARK SHADOW: rgba(54, 54, 54, 0.8)
+
+LIGHT SHADOW: rgba(119, 119, 119, 0.8)
+
+Light background: #F2F2F2;
+
+*/
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ADADAD;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/*
+ =========== STRUCTURE STYLES ===========
+*/
+
+body {
+    background-color: rgba(222, 222, 222, 0.7);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJUlEQVQYV2M8efLkfwY0YG5uzoguxjgUFKI7GsTH5m4M3w1ChQDL9iTNLhPUIAAAAABJRU5ErkJggg==);
+}
+
+.slik-ui-header {
+    padding: 10px;
+    background: #353D45;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    box-shadow: 1px 1px 3px 0 rgba(119, 119, 119, 0.8);
+    font-size: 14pt;
+    text-shadow: 1px 1px 3px rgba(54, 54, 54, 0.8);
+}
+
+.header-blue {
+    background: #356AE6;
+    border-bottom: 1px solid #24448F;
+    font-weight: normal;
+    text-shadow: 1px 1px 3px #24448F;
+}
+
+.dark-shadow {
+    box-shadow: 1px 1px 3px 0 rgba(54, 54, 54, 0.8);
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.slik-ui-showcase {
+    width: 100%;
+    padding: 10px;
+    min-height: 250px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(54, 54, 54, 0.8);
+    background: #363B3E;
+    box-shadow: inset 0 1px 8px 0 rgba(54, 54, 54, 0.9);
+}
+
+.slik-paper {
+    border: 1px solid rgba(54, 54, 54, 0.8);
+    padding: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background: #FFF;
+}
+
+.slik-block {
+    margin: 20px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+/*
+ =========== LINK STYLES ===========
+*/
+
+.slik-ui a,
+.slik-ui a:link,
+.slik-ui a:visited
+{
+    text-decoration: none;
+    color: #356AE6;
+}
+
+.slik-ui a:hover {
+    color: #284FA8;
+}
+
+a.slik-btn,
+a.slik-btn:link,
+a.slik-btn:visited {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+    text-align:center;
+    float:left;
+    background: rgb(53, 106, 230);
+    min-width: 80px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4) , 1px 1px 3px 0 rgba(119, 119, 119, 0.6);
+}
+
+a.slik-btn:active {
+    background: #284FA8;
+    box-shadow: none;
+}
+
+
+/*
+ =========== LIST STYLES ===========
+*/
+
+.slik-ui-list,
+.slik-ui ul{
+    list-style-type: none;
+    counter-reset: list-order;
+    padding: 0;
+    margin: 0;
+}
+.slik-ui-list > li {
+    position: relative;
+    counter-increment: list-order;
+    clear: both;
+    color: #4f4f4f;
+    text-shadow: 0 1px 1px rgba(119, 119, 119, 0.4);
+    text-align: center;
+    font-size: 16pt;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.slik-ui-list > li:before,
+.slik-ui-bubble
+{
+    display: block;
+    height: 60px;
+    width: 60px;
+    font-size: 28pt;
+    padding: 10px;
+    color: white;
+    line-height: 60px;
+    text-shadow: 1px 1px 3px rgba(119, 119, 119, 0.4);
+    border-radius: 40px;
+    box-shadow:
+        inset 0 0 4px 0 rgba(0,0,0,0.4) ,
+        1px 1px 3px 0 rgba(119, 119, 119, 0.6);
+    background: #ff741e;
+}
+
+.slik-ui-bubble {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    min-height: 60px;
+    min-width: 80px;
+    border-radius: 50px;
+    box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.4) , 1px 1px 4px 2px rgba(54, 54, 54, 0.8)
+}
+
+.slik-ui-list > li:before {
+    margin: 0 auto;
+    content: counter(list-order);
+    margin-bottom: 15px;
+}
+
+.slik-ui-list > li:first-child:before { background: #ff741e }
+.slik-ui-list > li:nth-child(2n):before { background: #5cd620 }
+.slik-ui-list > li:nth-child(3n):before { background: rgb(53, 106, 230) }
+.slik-ui-list > li:nth-child(4n):before { background: #db3f3f }
+.slik-ui-list > li:nth-child(5n):before { background: #9165b5 }
+
+.slik-ui-list > li:last-child,
+.slik-ui-list > li:last-child .slik-divider {
+    margin-bottom: 0;
+    border: 0;
+}
+.slik-ui-list > li span {
+    clear: both;
+    display: block;
+}
+
+.slik-orange {
+    background: #ff741e
+}
+
+.slik-green {
+    background: #5cd620;
+}
+
+.slik-darkgreen {
+    background: #27AB42;
+}
+
+.slik-blue {
+    background: rgb(53, 106, 230);
+}
+
+.slik-red {
+    background: #db3f3f;
+}
+
+.slik-purple {
+    background: #9935E6;
+}
+
+.slik-pink {
+    background: #C43D5F;
+}
+
+.slik-darkblue {
+    background: #364E9C;
+}
+
+/*
+ =========== MISC. STYLES ===========
+*/
+
+.slik-divider {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.2);
+    width: 80%;
+    bottom: 0;
+    left: 10%;
+}
+
+.slik-fixed {
+    position: fixed;
+}
+
+.slik-progress-bar {
+    padding:0;
+    background: rgba(119, 119, 119, 0.4);
+    border-radius: 4px;
+    height: 40px;
+    box-shadow: 1px 1px 3px 0 rgba(119, 119, 119, 0.8);
+}
+
+.slik-progress-bar .bar-item {
+    float: left;
+    height:40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-shadow: 1px 1px 3px rgba(119, 119, 119, 0.4);
+    font-size: 10pt;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+
+.slik-progress-bar .bar-item:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-left:0;
+}
+
+.slik-progress-bar .bar-item:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
