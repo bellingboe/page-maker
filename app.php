@@ -8,7 +8,7 @@
         <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.js"></script>
         <script type='text/javascript' src="./app.js"></script>
         <script type='text/javascript' src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        <script type='text/javascript' src="/jquery.center.js"></script>
+        <script type='text/javascript' src="./jquery.center.js"></script>
         <script src="./codemirror/lib/codemirror.js"></script>
         <script src="./codemirror/mode/javascript/javascript.js"></script>
         <script src="./codemirror/mode/xml/xml.js"></script>
