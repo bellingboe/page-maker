@@ -7,7 +7,7 @@
         <script type='text/javascript' src='//code.jquery.com/jquery-1.10.1.js'></script>
         <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.js"></script>
         <script type='text/javascript' src="./app.js"></script>
-        <script type='text/javascript' src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type='text/javascript' src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script type='text/javascript' src="/jquery.center.js"></script>
         <script src="./codemirror/lib/codemirror.js"></script>
         <script src="./codemirror/mode/javascript/javascript.js"></script>
@@ -16,12 +16,12 @@
         <script src="./codemirror/mode/htmlmixed/htmlmixed.js"></script>
         <script src="./tabifier.js"></script>
 
-	<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
             
         <link rel="stylesheet" href="./codemirror/lib/codemirror.css">
         <link rel="stylesheet" href="./whhg-font/css/whhg.css">
-        <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.css">
 	    
         <link rel="stylesheet" type="text/css" href="./app.css">
